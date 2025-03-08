@@ -1,0 +1,488 @@
+<!--
+Facultad de Arquitectura
+Colegio de Diseño Grafico
+Diseño de Interfaces Graficas
+201771947 Galindo Rueda Martha Elena
+!-->
+<html>
+    <head>
+        <title>TABLAS</title>
+        <style type="text/css">
+            *{
+                padding: 0px;
+                margin: 0px;
+                box-sizing: border-box;
+            }
+            header,nav,main,footer{
+                width: 100%;
+                padding: 30px;
+                color:beige;
+            }
+            header{
+                height: 100px;
+                background-color: saddlebrown;
+                
+            }
+            nav{
+                height: auto;
+                background-color: lightyellow;
+            }
+            main{
+                height: auto;
+                background-color: sandybrown;
+            }
+            footer{
+                height: 60px;
+                background-color: saddlebrown;
+            }
+            section{
+                width: 70%;
+                height: auto;
+                background-color: bisque;
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 30px;
+                color: brown;
+                padding: 30px;
+                overflow-x: auto;
+            }
+            h2{
+                margin-bottom: 20px;
+            }
+            header,footer{
+                text-align: center;
+            }
+            nav ul{
+                text-align: center;
+            }
+            nav ul li{
+                width: 10%;
+                background-color: darksalmon;
+                margin-left: 10px;
+                margin-right: 10px;
+                margin-bottom: 10px;
+                list-style-type: none;
+                padding: 10px;
+                display: inline-block;
+            }
+            nav ul li a{
+                text-decoration: none;
+                color: saddlebrown;
+                
+            }
+            p{
+                margin-bottom: 20px;
+            }
+            table{
+                background-color: aquamarine;
+            }
+            #tab_buap{
+                width: 80%;
+                margin-left: auto;
+                margin-right: auto;
+                border-spacing: 10px;
+                border-collapse: collapse;  
+            }
+            #tab_buap th{
+                background-color: darksalmon;
+                height: 40px;
+                color: brown;
+            }
+            #tab_buap td{
+                background-color: wheat;
+                color: saddlebrown;
+                height: 30px;
+                padding: 10px;
+            }
+            #tab_buap th, #tab_buap td{
+                border-width: 2px;
+                border-color: crimson;
+                border-style: solid;
+            }
+            #tab_libros{
+                width: 70%;
+                margin-left: auto;
+                margin-right: auto;
+                border-spacing: 10px;
+                border-collapse: collapse;  
+            }
+            #tab_libros th{
+                background-color: chocolate;
+                height: 40px;
+                color: white;
+            }
+            #tab_libros tbody tr:nth-child(even){
+                background-color: firebrick;
+                color: beige;
+            }
+             #tab_libros tbody tr:nth-child(odd){
+                background-color: peachpuff;
+                color: brown;
+            }
+            #tab_libros tfoot tr{
+                background-color: peachpuff;
+                color: saddlebrown;
+            }
+            #tab_libros td{
+                height: 30px;
+                padding: 10px;
+            }
+            #tab_pelis {
+                width: 80%;
+                margin-left: auto;
+                margin-right: auto;
+                
+                border-collapse: collapse;
+                background-color: burlywood;
+                color: saddlebrown;
+                
+            }
+            #tab_pelis th{
+                background-color: saddlebrown;
+                color: bisque;
+                height: 50px;
+                padding: 10px;
+            
+            }
+            #tab_pelis, #tab_pelis th, #tab_pelis td{
+                border-width: 2px;
+                border-style: solid;
+                border-color: rosybrown;
+                
+                
+            }
+            #tab_pelis td{
+                height: 30px;
+                padding: 20px;
+                
+            }
+            #tab_pelis tbody tr:hover{
+                background-color: yellow;
+            }
+            #tab_series{
+                width: 1500px;
+                border-collapse: collapse;
+                background-color: burlywood;
+                color: brown;
+                border-color: aquamarine;
+            }
+            #tab_series th, #tab_series td{
+                border: 3px solid brown;
+                padding: 10px;
+            }
+            #tab_series th{
+                background-color: darksalmon;
+                color: beige;
+                height: 30px;
+                padding: 10px;
+            }
+            #tab_series td{
+                height: 30px;
+                padding: 20px;
+                
+            }
+            #img_ico2{
+                width: 50px;
+                height: auto;
+                margin: 0;
+                margin-left: 0;
+                float: left;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <a href="indeex.html"> <img id="img_ico2" src="images/casa%20blanca.png"></a>
+            <h1>TABLAS</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="Formatos%20Textos.html">Formatos</a></li>
+                <li><a href="listasELE.html">Listas</a></li>
+                <li><a href="enlaces.html">Enlaces</a></li>
+                <li><a href="tablasENew.html">Tablas</a></li>
+                <li><a href="imagenes.html">Imagenes</a></li>
+                <li><a href="Audios.html">Audios</a></li>
+                <li><a href="videos.html">Videos</a></li>
+                <li><a href="Formularios.html">Formularios</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section>
+                <h2>Tablas Simple </h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eu congue purus. Phasellus molestie nulla vel nulla luctus pulvinar. Sed congue, orci a congue interdum, mi urna pharetra est, in lobortis orci mi vitae massa. Aliquam ac purus et augue convallis viverra eu ut metus. Nam placerat purus non risus sodales, quis pharetra urna tincidunt. Donec est diam, ultricies non urna tristique, imperdiet ultrices eros. Aliquam vestibulum metus ut scelerisque congue. Duis luctus, orci sit amet malesuada tempus, eros neque accumsan diam, sit amet accumsan est purus sed ex. Proin faucibus, felis eget porttitor sodales, purus mauris maximus augue, et.</p>
+                <table id="tab_buap" border="1">
+                    <thead> 
+                        <tr>
+                            <th>Matricula</th>
+                            <th>Nombre</th>
+                            <th>Facultad</th>
+                            <th>Celular</th>
+                            <th>e-Mail</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>201756519</td>
+                            <td>Jeferson Torres</td>
+                            <td>Arquitectura</td>
+                            <td>8798754654</td>
+                            <td>despapito@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>202487787</td>
+                            <td>Eleonor Perez</td>
+                            <td>Filosofia</td>
+                            <td>78984561230</td>
+                            <td>malepe74@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>201756558</td>
+                            <td>Chani Mendez</td>
+                            <td>Biologia</td>
+                            <td>6667845129</td>
+                            <td>chchaha@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>201456587</td>
+                            <td>Jor Demi</td>
+                            <td>Medicina</td>
+                            <td>3254561987</td>
+                            <td>jorjorss@gmail.com</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        
+                    </tfoot>
+                </table>
+            </section>
+            <section>
+                <h2>Tablas Cebra</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eu congue purus. Phasellus molestie nulla vel nulla luctus pulvinar. Sed congue, orci a congue interdum, mi urna pharetra est, in lobortis orci mi vitae massa. Aliquam ac purus et augue convallis viverra eu ut metus. Nam placerat purus non risus sodales, quis pharetra urna tincidunt. Donec est diam, ultricies non urna tristique, imperdiet ultrices eros. Aliquam vestibulum metus ut scelerisque congue. Duis luctus, orci sit amet malesuada tempus.</p>
+                
+                <table id="tab_libros" border="1">
+                    <thead> 
+                        <tr>
+                            <th>Titulo</th>
+                            <th>Autor</th>
+                            <th>Editorial</th>
+                            <th>Año</th>
+                            <th>Precio</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1984</td>
+                            <td>George Orwell</td>
+                            <td>Secker y Warburg</td>
+                            <td>1949</td>
+                            <td>$272</td>
+                        </tr>
+                        <tr>
+                            <td>El principito</td>
+                            <td>Antoine de Saint-Exupéry</td>
+                            <td>Reynal y Hitchcock</td>
+                            <td>1943</td>
+                            <td>$213</td>
+                        </tr>
+                        <tr>
+                            <td>Drácula</td>
+                            <td>Bram Stoker</td>
+                            <td>Archibald Constable y Co.</td>
+                            <td>1897</td>
+                            <td>$319</td>
+                        </tr>
+                        <tr>
+                            <td>Rayuela</td>
+                            <td>Julio Cortázar</td>
+                            <td>Sudamericana</td>
+                            <td>1963</td>
+                            <td>$379</td>
+                        </tr>
+                        <tr>
+                            <td>Crimen y castigo</td>
+                            <td>Fiódor Dostoyevski</td>
+                            <td>Editorial Rusa</td>
+                            <td>1866</td>
+                            <td>$340</td>
+                        </tr>
+                        <tr>
+                            <td>Moby Dick</td>
+                            <td>Herman Melville</td>
+                            <td>Harper y Brothers</td>
+                            <td>1851</td>
+                            <td>$298</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>Total</td>
+                            <td>$1816</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </section>
+            <section>
+                <h2>Tablas Hover</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eu congue purus. Phasellus molestie nulla vel nulla luctus pulvinar. Sed congue, orci a congue interdum, mi urna pharetra est, in lobortis orci mi vitae massa. Aliquam ac purus et augue convallis viverra eu ut metus. Nam placerat purus non risus sodales, quis pharetra urna tincidunt.</p>
+                <table id="tab_pelis">
+                    <thead>
+                        <tr>
+                            <th>Titulo</th>
+                            <th>Año</th>
+                            <th>Genero</th>
+                            <th>Director</th>
+                            <th>Pais</th>
+                            
+                        </tr> 
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Cuidado, bebe suelto</td>
+                            <td>1994</td>
+                            <td>Comedia infantil</td>
+                            <td>Patrick Read</td>
+                            <td>Estados Unidos</td>
+                            
+                        </tr>
+                         <tr>
+                            <td>El joven manos de tijera</td>
+                            <td>1990</td>
+                            <td>Fantasia</td>
+                            <td>Tim Burton</td>
+                            <td>Estados Unidos</td>
+                            
+                        </tr>
+                         <tr>
+                            <td>Mi pobre Angelito</td>
+                            <td>1990</td>
+                            <td>Aventura</td>
+                            <td>Chris Columbus</td>
+                            <td>Estados Unidos</td>
+                           
+                        </tr>
+                         <tr>
+                            <td>Locas Vacaciones sobre ruedas</td>
+                            <td>2006</td>
+                            <td>Aventura</td>
+                            <td>Barry Sonnenfeld</td>
+                            <td>Estados Unidos</td>
+                            
+                        </tr>
+                         <tr>
+                            <td>El pianista</td>
+                            <td>2002</td>
+                            <td>Historico</td>
+                            <td>Roman Polanski</td>
+                            <td>Alemania</td>
+                           
+                        </tr>
+                         <tr>
+                            <td>Mi mejor amiga Ana Frank </td>
+                            <td>2021</td>
+                            <td>Cine belico</td>
+                            <td>Ben Sombogaart</td>
+                            <td>Paises Bajos</td>
+                            
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                    
+                    </tfoot>
+
+                </table>
+                
+            </section>
+            <section>
+               <h2>Tabla Overflow-x</h2>
+                <p>hsajipsum dolor sit amet, consectetur adipiscing elit. Curabitur eu congue purus. Phasellus molestie nulla vel nulla luctus pulvinar. Sed congue, orci a congue interdum, mi urna pharetra est, in lobortis orci mi vitae massa. Aliquam ac purus et augue convallis viverra eu ut metus. Nam placerat purus non risus sodales, quis pharetra urna tincidunipsum dolor sit amet, consectetur adipiscing elit. Curabitur eu congue purus. Phasellus molestie nulla vel nulla luctus pulvinar. Sed congue, orci a congue interdum, mi urna pharetra est, in lobortis orci mi vitae massa. Aliquam ac purus et augue convallis viverra eu ut metus. Nam placerat purus non risus sodales, quis pharetra urna tincidunhshh</p>
+                <table id="tab_series">
+                    <thead>
+                        <tr>
+                            <th>Titulo</th>
+                            <th>Año</th>
+                            <th>Genero</th>
+                            <th>Creador</th>
+                            <th>Pais</th>
+                            <th>Temporadas</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Anne with a ''E''</td>
+                            <td>2017</td>
+                            <td>Drama</td>
+                            <td>Moira Walley</td>
+                            <td>Canada</td>
+                            <td>3</td>
+                            
+                        </tr>
+                        <tr>
+                            <td>Modern Family</td>
+                            <td>2009</td>
+                            <td>Comedia</td>
+                            <td>Christopher Lloyd</td>
+                            <td>Estados Unidos</td>
+                            <td>11</td>
+                            
+                        </tr>
+                        <tr>
+                            <td>Grey's Anatomy</td>
+                            <td>2005</td>
+                            <td>Drama medico</td>
+                            <td>Shonda Rhimes</td>
+                            <td>Estados Unidos</td>
+                            <td>21</td>
+                            
+                        </tr>
+                        <tr>
+                            <td>25 21</td>
+                            <td>2022</td>
+                            <td>Drama romance</td>
+                            <td>Jung Ji-hyun</td>
+                            <td>Corea del sur</td>
+                            <td>1</td>
+                            
+                        </tr>
+                        <tr>
+                            <td>Arcane</td>
+                            <td>2021</td>
+                            <td>Steampunk</td>
+                            <td>Christian Linke</td>
+                            <td>Francia y EUA</td>
+                            <td>2</td>
+                            
+                        </tr>
+                        <tr>
+                            <td>Yo soy Betty, la fea</td>
+                            <td>1999</td>
+                            <td>Drama</td>
+                            <td>Fernando Gaitan</td>
+                            <td>Colombia</td>
+                            <td>1</td>
+                            
+                        </tr>
+                    
+                    
+                    </tbody>
+                    <tfoot>
+                    
+                    
+                    </tfoot>
+                
+                
+                
+                
+                
+                </table>
+            
+            </section>
+        </main>
+        <footer>
+            <h5>Elaborado por Elena Galindo</h5>
+        </footer>
+    </body>
+</html>
